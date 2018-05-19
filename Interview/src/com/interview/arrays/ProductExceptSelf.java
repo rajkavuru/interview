@@ -1,5 +1,7 @@
 package com.interview.arrays;
 
+import java.util.Arrays;
+
 public class ProductExceptSelf {
 
 	public static void main(String[] args) {
@@ -7,6 +9,7 @@ public class ProductExceptSelf {
 
 		int[] nums = {1,2,3,4,5};
 		int[] result = productExceptSelf(nums);
+		Arrays.stream(result).forEach(System.out::println);
 	}
 	public static int[] productExceptSelf(int[] nums) {
 	    int[] result = new int[nums.length];
